@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 100%;
+}
+.contact {
+  width: 40%;
+  justify-content: center;
+  padding: 12px 100px;
+  margin: 24px auto;
+  background: peachpuff;
+}
+
+label {
+  margin-left: 12px;
+}
+button:hover {
+  background-color: rgb(180, 170, 39);
+  color: black;
+}
+.contact h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+  padding-top: 15px;
+  text-align: center;
+  justify-content: center;
+}
+.c-form-required {
+  color: red;
+  font-weight: bolder;
+}
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  column-gap: 30px;
+  height: 100%;
+  padding: 30px 50px;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  background: rgb(94, 47, 59);
+  margin: 0 auto;
+  outline: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
+  border: 0;
+  padding: 12px 24px;
+  border-radius: 22px;
+  transition: all ease-in-out 0.1s;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  opacity: 0.9;
+  background-color: lightcoral;
+}
+/*mobile display*/
+@media (min-width: 480px) {
+  .contact {
+    width: fit-content;
+  }
+  .contact h1 {
+    font-size: 50px;
+  }
+  input[type="submit"] {
+    display: flex;
+    font-size: 20px;
+    width: 70%;
+    justify-content: center;
+  }
+}
+/*tablet display*/
+@media (min-width: 768px) {
+  .contact {
+    width: fit-content;
+  }
+  .contact h1 {
+    font-size: 40px;
+  }
+  input[type="submit"] {
+    display: flex;
+    font-size: 20px;
+    width: 50%;
+    justify-content: center;
+  }
+}
+/*desktop display*/
+@media (min-width: 992px) {
+  .contact {
+    width: fit-content;
+  }
+  .contact h1 {
+    font-size: 50px;
+  }
+  input[type="submit"] {
+    display: flex;
+    font-size: 20px;
+    width: 60%;
+    justify-content: center;
+  }
+}
